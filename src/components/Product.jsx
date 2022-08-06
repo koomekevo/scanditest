@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-export default class PDP extends Component {
+export default class Product extends Component {
   render() {
     return (
-      <div>PDP</div>
+      <div>Product</div>
     )
   }
 }
