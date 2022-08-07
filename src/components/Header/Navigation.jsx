@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
 // Start of Navigation Styles
 const NavigationLayout = styled.div`
@@ -39,6 +40,7 @@ const HeaderNavigation = styled.div`
   flex-grow: 0;
 `;
 
+// Start of ButtonWomen
 const ButtonWomen = styled.div`
   /* _Header / Elements / Desktop / Buttons */
 
@@ -97,7 +99,7 @@ const ButtonWomenLabelLayout = styled.div`
   flex-grow: 0;
 `;
 
-const ButtonWomenLabel = styled.div`
+const ButtonWomenLabel = styled(Link)`
   /* Label */
 
   width: 65px;
@@ -161,6 +163,126 @@ const ButtonWomenPaddingRight = styled.div`
   flex-grow: 0;
 `;
 
+// Start of ButtonMen
+const ButtonMen = styled.div`
+  /* _Header / Elements / Desktop / Buttons */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+
+  width: 69px;
+  height: 56px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+const ButtonMenPaddingLeft = styled.div`
+  /* Padding left */
+
+  width: 16px;
+  height: 2px;
+
+  /* --c-primary */
+
+  background: #5ece7b;
+  opacity: 0;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+const ButtonMenLabelLayout = styled.div`
+  /* Label */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+
+  width: 37px;
+  height: 52px;
+`;
+
+const ButtonMenLabel = styled.div`
+  /* Label */
+
+  width: 37px;
+  height: 20px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* identical to box height, or 19px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* --c-text */
+
+  color: #1d1f22;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+const ButtonMenBorder = styled.div`
+  /* Border */
+
+  width: 37px;
+  height: 2px;
+
+  /* --c-primary */
+
+  background: #5ece7b;
+  opacity: 0;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
+const ButtonMenPaddingRight = styled.div`
+  /* Padding right */
+
+  width: 16px;
+  height: 2px;
+
+  /* --c-primary */
+
+  background: #5ece7b;
+  opacity: 0;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+`;
+
 export default class Navigation extends Component {
   render() {
     return (
@@ -169,11 +291,23 @@ export default class Navigation extends Component {
           <ButtonWomen>
             <ButtonWomenPaddingLeft></ButtonWomenPaddingLeft>
             <ButtonWomenLabelLayout>
-              <ButtonWomenLabel>WOMEN</ButtonWomenLabel>
+              <Router>
+                <ButtonWomenLabel to="/src/pages/Product.jsx">
+                  WOMEN
+                </ButtonWomenLabel>
+              </Router>
               <ButtonWomenBorder></ButtonWomenBorder>
             </ButtonWomenLabelLayout>
             <ButtonWomenPaddingRight></ButtonWomenPaddingRight>
           </ButtonWomen>
+          <ButtonMen>
+            <ButtonMenPaddingLeft></ButtonMenPaddingLeft>
+            <ButtonMenLabelLayout>
+              <ButtonMenLabel>MEN</ButtonMenLabel>
+              <ButtonMenBorder></ButtonMenBorder>
+            </ButtonMenLabelLayout>
+            <ButtonMenPaddingRight></ButtonMenPaddingRight>
+          </ButtonMen>
         </HeaderNavigation>
       </NavigationLayout>
     );
