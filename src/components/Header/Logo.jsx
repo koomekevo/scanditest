@@ -1,21 +1,12 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import svg21 from "../assets/images/header/svg21.svg";
-import svg19 from "../assets/images/header/svg19.svg";
-import svg3 from "../assets/images/header/svg3.svg";
-import svg2 from "../assets/images/header/svg2.svg";
+import svg21 from "../../assets/images/header/svg21.svg";
+import svg19 from "../../assets/images/header/svg19.svg";
+import svg3 from "../../assets/images/header/svg3.svg";
+import svg2 from "../../assets/images/header/svg2.svg";
 
-const Container = styled.div`
-  /* Header - Desktop */
-
-  position: absolute;
-  width: 1440px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-`;
-
-const Logo = styled.div`
+// Logo Styles
+const LogoLayout = styled.div`
   /* a-logo */
 
   position: absolute;
@@ -174,35 +165,34 @@ const Vector3 = styled.div`
   background: #ed1c24;
   border: 1px solid #ffffff;
 `;
+// End of Logo Styles
 
-export default class Header extends Component {
+export default class Logo extends Component {
   render() {
     return (
-      <Container>
-        <Logo>
-          <LogoTransparent>
-            <BrandIcon>
-              <VSF>
-                <Group>
-                  <SVG17>
-                    <SVG20>
-                      <SVG21 />
-                    </SVG20>
-                    <SVG18>
-                      <SVG19 />
-                    </SVG18>
-                  </SVG17>
-                  <SVG1>
-                    <SVG3 />
-                    <SVG2 />
-                  </SVG1>
-                </Group>
-              </VSF>
-              <Vector3 />
-            </BrandIcon>
-          </LogoTransparent>
-        </Logo>
-      </Container>
+      <LogoLayout>
+        <LogoTransparent>
+          <BrandIcon>
+            <VSF>
+              <Group>
+                <SVG17>
+                  <SVG20>
+                    <SVG21 />
+                  </SVG20>
+                  <SVG18>
+                    <SVG19 />
+                  </SVG18>
+                </SVG17>
+                <SVG1>
+                  <SVG3 />
+                  <SVG2 />
+                </SVG1>
+              </Group>
+            </VSF>
+            <Vector3 />
+          </BrandIcon>
+        </LogoTransparent>
+      </LogoLayout>
     );
   }
 }
