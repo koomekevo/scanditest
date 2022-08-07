@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
+import Actions from "./Actions";
 
 const Container = styled.nav`
   /* Header - Desktop */
@@ -19,6 +20,7 @@ export default class Header extends Component {
       <Container>
         <Logo />
         <Navigation />
+        <Actions />
       </Container>
     );
   }

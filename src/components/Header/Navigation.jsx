@@ -415,7 +415,7 @@ export default class Navigation extends Component {
       <NavigationLayout>
         <HeaderNavigation>
           <ButtonWomen>
-            <ButtonWomenPaddingLeft></ButtonWomenPaddingLeft>
+            <ButtonWomenPaddingLeft />
             <ButtonWomenLabelLayout>
               <Router>
                 <ButtonWomenLabel to="/src/pages/Product.jsx">
@@ -424,23 +424,23 @@ export default class Navigation extends Component {
               </Router>
               <ButtonWomenBorder></ButtonWomenBorder>
             </ButtonWomenLabelLayout>
-            <ButtonWomenPaddingRight></ButtonWomenPaddingRight>
+            <ButtonWomenPaddingRight />
           </ButtonWomen>
           <ButtonMen>
-            <ButtonMenPaddingLeft></ButtonMenPaddingLeft>
+            <ButtonMenPaddingLeft />
             <ButtonMenLabelLayout>
               <ButtonMenLabel>MEN</ButtonMenLabel>
               <ButtonMenBorder></ButtonMenBorder>
             </ButtonMenLabelLayout>
-            <ButtonMenPaddingRight></ButtonMenPaddingRight>
+            <ButtonMenPaddingRight />
           </ButtonMen>
           <ButtonKids>
-            <ButtonKidsPaddingLeft></ButtonKidsPaddingLeft>
+            <ButtonKidsPaddingLeft />
             <ButtonKidsLabelLayout>
               <ButtonKidsLabel>KIDS</ButtonKidsLabel>
               <ButtonKidsBorder></ButtonKidsBorder>
             </ButtonKidsLabelLayout>
-            <ButtonKidsPaddingRight></ButtonKidsPaddingRight>
+            <ButtonKidsPaddingRight />
           </ButtonKids>
         </HeaderNavigation>
       </NavigationLayout>
