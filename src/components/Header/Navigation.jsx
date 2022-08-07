@@ -537,6 +537,134 @@ order: 2;
 flex-grow: 0;
 `;
 
+// Start of ButtonFive
+const ButtonFive = styled.div`
+  /* _Header / Elements / Desktop / Buttons */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+
+  display: none;
+  width: 82px;
+  height: 56px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+`;
+
+const ButtonFivePaddingLeft = styled.div`
+  /* Padding left */
+
+  width: 16px;
+  height: 2px;
+
+  /* --c-primary */
+
+  background: #5ece7b;
+  opacity: 0;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+const ButtonFiveLabelLayout = styled.div`
+  /* Label */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+
+  width: 36px;
+  height: 52px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+const ButtonFiveLabel = styled.div`
+  /* Label */
+
+  width: 36px;
+  height: 20px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* identical to box height, or 19px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* --c-text */
+
+  color: #1d1f22;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+const ButtonFiveBorder = styled.div`
+  /* Border */
+
+  width: 36px;
+  height: 2px;
+
+  /* --c-primary */
+
+  background: #5ece7b;
+  opacity: 0;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
+const ButtonFivePaddingRight = styled.div`
+/* Padding right */
+
+
+width: 16px;
+height: 2px;
+
+/* --c-primary */
+
+background: #5ECE7B;
+opacity: 0;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+`;
+
 export default class Navigation extends Component {
   render() {
     return (
@@ -578,6 +706,14 @@ export default class Navigation extends Component {
             </ButtonFourLabelLayout>
             <ButtonFourPaddingRight />
           </ButtonFour>
+          <ButtonFive>
+            <ButtonFivePaddingLeft />
+            <ButtonFiveLabelLayout>
+              <ButtonFiveLabel />
+              <ButtonFiveBorder />
+            </ButtonFiveLabelLayout>
+            <ButtonFivePaddingRight />
+          </ButtonFive>
         </HeaderNavigation>
       </NavigationLayout>
     );
