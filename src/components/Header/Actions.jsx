@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import dollarsign from "../../assets/images/header/dollarsign.svg";
 import vectorwheel from "../../assets/images/header/vectorwheel.svg";
+import vectorwheel2 from "../../assets/images/header/vectorwheel2.svg";
 import vectorcart from "../../assets/images/header/vectorcart.svg";
 import vectorarrowdown from "../../assets/images/header/vectorarrowdown.svg";
 
@@ -186,7 +187,7 @@ const VectorWheelOne = styled.img.attrs({
 `;
 
 const VectorWheelTwo = styled.img.attrs({
-  src: `${vectorwheel}`,
+  src: `${vectorwheel2}`,
 })`
   /* Vector */
 
