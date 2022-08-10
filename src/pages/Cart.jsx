@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import Navbar from '../components/Header'
+import React, { Component } from 'react';
+import Header from '../components/Header/Header';
 
 export default class Cart extends Component {
   render() {
     return (
-      <div>Cart</div>
-    )
+      <Header />
+    );
   }
 }

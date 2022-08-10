@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 const SurfaceLayout = styled.div`
   /* Surface */
@@ -18,7 +18,7 @@ const SurfaceLayout = styled.div`
 export default class Surface extends Component {
   render() {
     return (
-        <SurfaceLayout />
+      <SurfaceLayout />
     );
   }
 }

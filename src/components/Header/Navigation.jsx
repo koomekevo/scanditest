@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 
 // Start of Navigation Styles
 const NavigationLayout = styled.div`
@@ -929,7 +929,7 @@ export default class Navigation extends Component {
                   WOMEN
                 </ButtonWomenLabel>
               </Router>
-              <ButtonWomenBorder></ButtonWomenBorder>
+              <ButtonWomenBorder />
             </ButtonWomenLabelLayout>
             <ButtonWomenPaddingRight />
           </ButtonWomen>
@@ -937,7 +937,7 @@ export default class Navigation extends Component {
             <ButtonMenPaddingLeft />
             <ButtonMenLabelLayout>
               <ButtonMenLabel>MEN</ButtonMenLabel>
-              <ButtonMenBorder></ButtonMenBorder>
+              <ButtonMenBorder />
             </ButtonMenLabelLayout>
             <ButtonMenPaddingRight />
           </ButtonMen>

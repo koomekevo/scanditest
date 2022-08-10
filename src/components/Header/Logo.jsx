@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import svg21 from "../../assets/images/header/svg21.svg";
-import svg19 from "../../assets/images/header/svg19.svg";
-import svg3 from "../../assets/images/header/svg3.svg";
-import svg2 from "../../assets/images/header/svg2.svg";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import svg21 from '../../assets/images/header/svg21.svg';
+import svg19 from '../../assets/images/header/svg19.svg';
+import svg3 from '../../assets/images/header/svg3.svg';
+import svg2 from '../../assets/images/header/svg2.svg';
 
 // Logo Styles
 const LogoLayout = styled.div`

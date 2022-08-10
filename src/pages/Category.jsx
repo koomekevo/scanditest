@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Header from "../components/Header/Header";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import Header from '../components/Header/Header';
 
 const CategoryLayout = styled.div`
   /* Category */
