@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Header from '../components/Header/Header';
+import Title from '../components/Body/Title';
 
 const CategoryLayout = styled.div`
   /* Category */
@@ -12,10 +13,10 @@ const CategoryLayout = styled.div`
 export default class Category extends Component {
   render() {
     return (
-      <>
-        <CategoryLayout />
+      <CategoryLayout>
         <Header />
-      </>
+        <Title />
+      </CategoryLayout>
     );
   }
 }
