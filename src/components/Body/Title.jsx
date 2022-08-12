@@ -31,7 +31,7 @@ export default class Title extends Component {
   render() {
     return (
       <TitleLayout>
-        Category
+        Category name
       </TitleLayout>
     );
   }
