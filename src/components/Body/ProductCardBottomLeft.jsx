@@ -23,10 +23,40 @@ const ProductCardBottomLeftLayout = styled.div`
   filter: drop-shadow(0px 4px 35px rgba(168, 172, 176, 0.19));
 `;
 
+const ProductCardBottomLeftElements = styled.div`
+  /* Product Card / Elements / Desktop */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px;
+
+  width: 386px;
+  height: 444px;
+
+  /* --c-white */
+
+  background: #ffffff;
+  /* --product-card-box-shadow:hover */
+
+  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
 export default class ProductCardBottomLeft extends Component {
   render() {
     return (
-      <ProductCardBottomLeftLayout />
+      <ProductCardBottomLeftLayout>
+        <ProductCardBottomLeftElements />
+      </ProductCardBottomLeftLayout>
     );
   }
 }
