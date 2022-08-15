@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // eslint-disable-next-line no-unused-vars
 import styled from 'styled-components';
+import productcart from '../../assets/images/body/productcart.svg';
 
 const ProductCardBottomLeftLayout = styled.div`
   /* Product Card - Desktop Bottom Left Layout */
@@ -89,6 +90,42 @@ const ProductCardBottomLeftCircleIconElements = styled.div`
   bottom: 0%;
 `;
 
+const ProductCardBottomLeftIconEmptyCartLayout = styled.div`
+  /* Icon / Empty Cart */
+
+  position: absolute;
+  left: 26.92%;
+  right: 26.92%;
+  top: 26.92%;
+  bottom: 26.92%;
+`;
+
+const ProductCardBottomLeftIconEmptyCartVector = styled.img.attrs({
+  src: `${productcart}`,
+})`
+  /* Vector */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 5.85%;
+  bottom: 4.15%;
+`;
+
+const ProductCardBottomLeftCircleIconSurface = styled.div`
+  /* Surface */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  /* --c-primary */
+
+  background: #5ece7b;
+`;
+
 export default class ProductCardBottomLeft extends Component {
   render() {
     return (
@@ -96,7 +133,12 @@ export default class ProductCardBottomLeft extends Component {
         <ProductCardBottomLeftElements>
           <ProductCardBottomLeftImageLayout>
             <ProductCardBottomLeftCircleIconLayout>
-              <ProductCardBottomLeftCircleIconElements />
+              <ProductCardBottomLeftCircleIconElements>
+                <ProductCardBottomLeftIconEmptyCartLayout>
+                  <ProductCardBottomLeftIconEmptyCartVector />
+                </ProductCardBottomLeftIconEmptyCartLayout>
+                <ProductCardBottomLeftCircleIconSurface />
+              </ProductCardBottomLeftCircleIconElements>
             </ProductCardBottomLeftCircleIconLayout>
           </ProductCardBottomLeftImageLayout>
         </ProductCardBottomLeftElements>
