@@ -79,13 +79,25 @@ const ProductCardBottomLeftCircleIconLayout = styled.div`
   filter: drop-shadow(0px 4px 11px rgba(29, 31, 34, 0.1));
 `;
 
+const ProductCardBottomLeftCircleIconElements = styled.div`
+  /* _Circle Icon / Elements / Common */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+`;
+
 export default class ProductCardBottomLeft extends Component {
   render() {
     return (
       <ProductCardBottomLeftLayout>
         <ProductCardBottomLeftElements>
           <ProductCardBottomLeftImageLayout>
-            <ProductCardBottomLeftCircleIconLayout />
+            <ProductCardBottomLeftCircleIconLayout>
+              <ProductCardBottomLeftCircleIconElements />
+            </ProductCardBottomLeftCircleIconLayout>
           </ProductCardBottomLeftImageLayout>
         </ProductCardBottomLeftElements>
       </ProductCardBottomLeftLayout>
