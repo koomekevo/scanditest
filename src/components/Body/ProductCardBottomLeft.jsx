@@ -51,11 +51,27 @@ const ProductCardBottomLeftElements = styled.div`
   flex-grow: 0;
 `;
 
+const ProductCardBottomLeftImage = styled.div`
+  /* Image */
+
+  width: 354px;
+  height: 330px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
 export default class ProductCardBottomLeft extends Component {
   render() {
     return (
       <ProductCardBottomLeftLayout>
-        <ProductCardBottomLeftElements />
+        <ProductCardBottomLeftElements>
+          <ProductCardBottomLeftImage />
+        </ProductCardBottomLeftElements>
       </ProductCardBottomLeftLayout>
     );
   }
