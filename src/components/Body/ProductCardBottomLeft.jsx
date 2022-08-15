@@ -51,7 +51,7 @@ const ProductCardBottomLeftElements = styled.div`
   flex-grow: 0;
 `;
 
-const ProductCardBottomLeftImage = styled.div`
+const ProductCardBottomLeftImageLayout = styled.div`
   /* Image */
 
   width: 354px;
@@ -65,12 +65,28 @@ const ProductCardBottomLeftImage = styled.div`
   flex-grow: 0;
 `;
 
+const ProductCardBottomLeftCircleIconLayout = styled.div`
+  /* Circle Icon Layout*/
+
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  right: 15px;
+  bottom: -26px;
+
+  /* --button-box-shadow */
+
+  filter: drop-shadow(0px 4px 11px rgba(29, 31, 34, 0.1));
+`;
+
 export default class ProductCardBottomLeft extends Component {
   render() {
     return (
       <ProductCardBottomLeftLayout>
         <ProductCardBottomLeftElements>
-          <ProductCardBottomLeftImage />
+          <ProductCardBottomLeftImageLayout>
+            <ProductCardBottomLeftCircleIconLayout />
+          </ProductCardBottomLeftImageLayout>
         </ProductCardBottomLeftElements>
       </ProductCardBottomLeftLayout>
     );
