@@ -70,6 +70,21 @@ const ProductCardTopRightImageFrameLayout = styled.img.attrs({
   bottom: 0px;
 `;
 
+const ProductCardTopRightImageSpacerBase = styled.div`
+  /* _layout / --spacer-base */
+
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
 export default class ProductCardTopRight extends Component {
   render() {
     return (
@@ -78,6 +93,7 @@ export default class ProductCardTopRight extends Component {
           <ProductCardTopRightImageLayout>
             <ProductCardTopRightImageFrameLayout />
           </ProductCardTopRightImageLayout>
+          <ProductCardTopRightImageSpacerBase />
         </ProductCardTopRightElements>
       </ProductCardTopRightLayout>
     );
