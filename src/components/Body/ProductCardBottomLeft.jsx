@@ -131,6 +131,34 @@ const ProductCardBottomLeftContent = styled.div`
   flex-grow: 0;
 `;
 
+const ProductCardBottomLeftContentTitle = styled.div`
+  /* Title */
+
+  width: 354px;
+  height: 29px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  /* identical to box height, or 29px */
+
+  display: flex;
+  align-items: center;
+
+  /* --c-black */
+
+  color: #1d1f22;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
 export default class ProductCardBottomLeft extends Component {
   render() {
     return (
@@ -141,7 +169,11 @@ export default class ProductCardBottomLeft extends Component {
             <ProductCardBottomLeftImageFrameLayout />
           </ProductCardBottomLeftImageLayout>
           <ProductCardBottomLeftImageSpacerBase />
-          <ProductCardBottomLeftContent />
+          <ProductCardBottomLeftContent>
+            <ProductCardBottomLeftContentTitle>
+              Apollo Running Short
+            </ProductCardBottomLeftContentTitle>
+          </ProductCardBottomLeftContent>
         </ProductCardBottomLeftElements>
       </ProductCardBottomLeftLayout>
     );
