@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 const ProductCardTopRightLayout = styled.div`
   /* Product Card - Top Right Desktop */
@@ -43,11 +43,27 @@ const ProductCardTopRightElements = styled.div`
   flex-grow: 0;
 `;
 
+const ProductCardTopRightImageLayout = styled.div`
+  /* Image */
+
+  width: 354px;
+  height: 330px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
 export default class ProductCardTopRight extends Component {
   render() {
     return (
       <ProductCardTopRightLayout>
-        <ProductCardTopRightElements />
+        <ProductCardTopRightElements>
+          <ProductCardTopRightImageLayout />
+        </ProductCardTopRightElements>
       </ProductCardTopRightLayout>
     );
   }
