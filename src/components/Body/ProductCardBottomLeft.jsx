@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 // eslint-disable-next-line no-unused-vars
 import styled from 'styled-components';
-import productcart from '../../assets/images/body/productcart.svg';
+import CircleIcon from '../../assets/images/body/CircleIcon.svg';
+import ProductA from '../../assets/images/body/ProductA.png';
 
 const ProductCardBottomLeftLayout = styled.div`
   /* Product Card - Desktop Bottom Left Layout */
@@ -66,7 +67,9 @@ const ProductCardBottomLeftImageLayout = styled.div`
   flex-grow: 0;
 `;
 
-const ProductCardBottomLeftCircleIconLayout = styled.div`
+const ProductCardBottomLeftCircleIconLayout = styled.img.attrs({
+  src: `${CircleIcon}`,
+})`
   /* Circle Icon Layout*/
 
   position: absolute;
@@ -80,66 +83,25 @@ const ProductCardBottomLeftCircleIconLayout = styled.div`
   filter: drop-shadow(0px 4px 11px rgba(29, 31, 34, 0.1));
 `;
 
-const ProductCardBottomLeftCircleIconElements = styled.div`
-  /* _Circle Icon / Elements / Common */
-
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-`;
-
-const ProductCardBottomLeftIconEmptyCartLayout = styled.div`
-  /* Icon / Empty Cart */
-
-  position: absolute;
-  left: 26.92%;
-  right: 26.92%;
-  top: 26.92%;
-  bottom: 26.92%;
-`;
-
-const ProductCardBottomLeftIconEmptyCartVector = styled.img.attrs({
-  src: `${productcart}`,
+const ProductCardBottomLeftImageFrameLayout = styled.img.attrs({
+  src: `${ProductA}`,
 })`
-  /* Vector */
+  /* Image */
 
   position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 5.85%;
-  bottom: 4.15%;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
 `;
-
-const ProductCardBottomLeftCircleIconSurface = styled.div`
-  /* Surface */
-
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
-  /* --c-primary */
-
-  background: #5ece7b;
-`;
-
 export default class ProductCardBottomLeft extends Component {
   render() {
     return (
       <ProductCardBottomLeftLayout>
         <ProductCardBottomLeftElements>
           <ProductCardBottomLeftImageLayout>
-            <ProductCardBottomLeftCircleIconLayout>
-              <ProductCardBottomLeftCircleIconElements>
-                <ProductCardBottomLeftIconEmptyCartLayout>
-                  <ProductCardBottomLeftIconEmptyCartVector />
-                </ProductCardBottomLeftIconEmptyCartLayout>
-                <ProductCardBottomLeftCircleIconSurface />
-              </ProductCardBottomLeftCircleIconElements>
-            </ProductCardBottomLeftCircleIconLayout>
+            <ProductCardBottomLeftCircleIconLayout />
+            <ProductCardBottomLeftImageFrameLayout />
           </ProductCardBottomLeftImageLayout>
         </ProductCardBottomLeftElements>
       </ProductCardBottomLeftLayout>
