@@ -96,7 +96,9 @@ export default class ProductCardTopRight extends Component {
         <ProductCardTopRightElements>
           <ProductCardTopRightImageLayout>
             <ProductCardTopRightImageFrameLayout>
-              <OutOfStock />
+              <OutOfStock>
+                OUT OF STOCK
+              </OutOfStock>
             </ProductCardTopRightImageFrameLayout>
           </ProductCardTopRightImageLayout>
         </ProductCardTopRightElements>
