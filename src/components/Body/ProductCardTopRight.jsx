@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ProductC from '../../assets/images/body/ProductC.png';
 
 const ProductCardTopRightLayout = styled.div`
   /* Product Card - Top Right Desktop */
@@ -57,7 +58,9 @@ const ProductCardTopRightImageLayout = styled.div`
   flex-grow: 0;
 `;
 
-const ProductCardTopRightImageFrameLayout = styled.div`
+const ProductCardTopRightImageFrameLayout = styled.img.attrs({
+  src: `${ProductC}`,
+})`
   /* Image */
 
   position: absolute;
@@ -67,39 +70,13 @@ const ProductCardTopRightImageFrameLayout = styled.div`
   bottom: 0px;
 `;
 
-const OutOfStock = styled.div`
-  /* out of stock */
-
-  position: absolute;
-  left: 25.42%;
-  right: 25.71%;
-  top: 44.24%;
-  bottom: 43.94%;
-
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 160%;
-  /* identical to box height, or 38px */
-
-  display: flex;
-  align-items: center;
-
-  color: #8d8f9a;
-`;
-
 export default class ProductCardTopRight extends Component {
   render() {
     return (
       <ProductCardTopRightLayout>
         <ProductCardTopRightElements>
           <ProductCardTopRightImageLayout>
-            <ProductCardTopRightImageFrameLayout>
-              <OutOfStock>
-                OUT OF STOCK
-              </OutOfStock>
-            </ProductCardTopRightImageFrameLayout>
+            <ProductCardTopRightImageFrameLayout />
           </ProductCardTopRightImageLayout>
         </ProductCardTopRightElements>
       </ProductCardTopRightLayout>
