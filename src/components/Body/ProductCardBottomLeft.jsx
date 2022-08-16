@@ -110,6 +110,27 @@ const ProductCardBottomLeftImageSpacerBase = styled.div`
   flex-grow: 0;
 `;
 
+const ProductCardBottomLeftContent = styled.div`
+  /* Content */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 354px;
+  height: 58px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
 export default class ProductCardBottomLeft extends Component {
   render() {
     return (
@@ -120,6 +141,7 @@ export default class ProductCardBottomLeft extends Component {
             <ProductCardBottomLeftImageFrameLayout />
           </ProductCardBottomLeftImageLayout>
           <ProductCardBottomLeftImageSpacerBase />
+          <ProductCardBottomLeftContent />
         </ProductCardBottomLeftElements>
       </ProductCardBottomLeftLayout>
     );
