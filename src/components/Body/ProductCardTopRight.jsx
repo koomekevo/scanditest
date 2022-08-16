@@ -57,12 +57,48 @@ const ProductCardTopRightImageLayout = styled.div`
   flex-grow: 0;
 `;
 
+const ProductCardTopRightImageFrameLayout = styled.div`
+  /* Image */
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+`;
+
+const OutOfStock = styled.div`
+  /* out of stock */
+
+  position: absolute;
+  left: 25.42%;
+  right: 25.71%;
+  top: 44.24%;
+  bottom: 43.94%;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  /* identical to box height, or 38px */
+
+  display: flex;
+  align-items: center;
+
+  color: #8d8f9a;
+`;
+
 export default class ProductCardTopRight extends Component {
   render() {
     return (
       <ProductCardTopRightLayout>
         <ProductCardTopRightElements>
-          <ProductCardTopRightImageLayout />
+          <ProductCardTopRightImageLayout>
+            <ProductCardTopRightImageFrameLayout>
+              <OutOfStock />
+            </ProductCardTopRightImageFrameLayout>
+          </ProductCardTopRightImageLayout>
         </ProductCardTopRightElements>
       </ProductCardTopRightLayout>
     );
