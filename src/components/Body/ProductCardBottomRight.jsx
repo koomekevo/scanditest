@@ -18,10 +18,37 @@ const ProductCardBottomRightLayout = styled.div`
   bottom: 191px;
 `;
 
+const ProductCardBottomRightElements = styled.div`
+  /* Product Card / Elements / Desktop */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px;
+
+  width: 386px;
+  height: 444px;
+
+  /* --c-white */
+
+  background: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
 class ProductCardBottomRight extends Component {
   render() {
     return (
-      <ProductCardBottomRightLayout />
+      <ProductCardBottomRightLayout>
+        <ProductCardBottomRightElements />
+      </ProductCardBottomRightLayout>
     );
   }
 }
