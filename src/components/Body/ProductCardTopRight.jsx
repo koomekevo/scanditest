@@ -85,6 +85,27 @@ const ProductCardTopRightImageSpacerBase = styled.div`
   flex-grow: 0;
 `;
 
+const ProductCardTopRightContent = styled.div`
+  /* Content */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 354px;
+  height: 58px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
 export default class ProductCardTopRight extends Component {
   render() {
     return (
@@ -94,6 +115,7 @@ export default class ProductCardTopRight extends Component {
             <ProductCardTopRightImageFrameLayout />
           </ProductCardTopRightImageLayout>
           <ProductCardTopRightImageSpacerBase />
+          <ProductCardTopRightContent />
         </ProductCardTopRightElements>
       </ProductCardTopRightLayout>
     );
