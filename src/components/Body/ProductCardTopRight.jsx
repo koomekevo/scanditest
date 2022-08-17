@@ -132,6 +132,25 @@ const ProductCardTopRightContentTitle = styled.div`
   flex-grow: 0;
 `;
 
+const ProductCardTopRightContentPrice = styled.div`
+  /* Price */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  width: 58px;
+  height: 29px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
 export default class ProductCardTopRight extends Component {
   render() {
     return (
@@ -145,6 +164,9 @@ export default class ProductCardTopRight extends Component {
             <ProductCardTopRightContentTitle>
               Apollo Running Short
             </ProductCardTopRightContentTitle>
+            <ProductCardTopRightContentPrice>
+              $50.00
+            </ProductCardTopRightContentPrice>
           </ProductCardTopRightContent>
         </ProductCardTopRightElements>
       </ProductCardTopRightLayout>
