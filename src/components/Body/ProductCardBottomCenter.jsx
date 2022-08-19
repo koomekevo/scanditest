@@ -7,53 +7,51 @@ const ProductCardBottomCenterLayout = styled.div`
 
   /* Auto layout */
 
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
 
-position: absolute;
-width: 386px;
-height: 444px;
-left: calc(50% - 386px/2 - 1px);
-bottom: 191px;
+  position: absolute;
+  width: 386px;
+  height: 444px;
+  left: calc(50% - 386px / 2 - 1px);
+  bottom: 191px;
 `;
 
 const ProductCardBottomCenterElements = styled.div`
-/* Product Card / Elements / Desktop */
+  /* Product Card / Elements / Desktop */
 
+  /* Auto layout */
 
-/* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px;
 
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
-padding: 16px;
+  width: 386px;
+  height: 444px;
 
-width: 386px;
-height: 444px;
+  /* --c-white */
 
-/* --c-white */
+  background: #ffffff;
 
-background: #FFFFFF;
+  /* Inside auto layout */
 
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 `;
 
 const ProductCardBottomCenterImageLayout = styled.div`
-/* Image */
+  /* Image */
 
-
-position: absolute;
-left: 0px;
-right: 0px;
-top: 0px;
-bottom: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
 `;
 
 const ProductCardBottomCenterImageFrameLayout = styled.img.attrs({
@@ -69,94 +67,87 @@ const ProductCardBottomCenterImageFrameLayout = styled.img.attrs({
 `;
 
 const ProductCardBottomCenterImageSpacerBase = styled.div`
-/* _layout / --spacer-base */
+  /* _layout / --spacer-base */
 
+  width: 24px;
+  height: 24px;
 
-width: 24px;
-height: 24px;
+  opacity: 0;
 
-opacity: 0;
+  /* Inside auto layout */
 
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 `;
 
 const ProductCardBottomCenterContent = styled.div`
-/* Content */
+  /* Content */
 
+  /* Auto layout */
 
-/* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
 
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
+  width: 354px;
+  height: 58px;
 
-width: 354px;
-height: 58px;
+  /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
 `;
 
 const ProductCardBottomCenterContentTitle = styled.div`
-/* Title */
+  /* Title */
 
+  width: 354px;
+  height: 29px;
 
-width: 354px;
-height: 29px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  /* identical to box height, or 29px */
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 160%;
-/* identical to box height, or 29px */
+  display: flex;
+  align-items: center;
 
-display: flex;
-align-items: center;
+  /* --c-black */
 
-/* --c-black */
+  color: #1d1f22;
 
-color: #1D1F22;
+  /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 `;
 
 const ProductCardBottomCenterContentPrice = styled.div`
-/* Price */
+  /* Price */
 
+  /* Auto layout */
 
-/* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
+  width: 58px;
+  height: 29px;
 
-width: 58px;
-height: 29px;
+  /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 `;
 
 class ProductCardBottomCenter extends Component {
