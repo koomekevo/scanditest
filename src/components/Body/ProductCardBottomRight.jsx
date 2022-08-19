@@ -70,6 +70,21 @@ const ProductCardBottomRightImageFrameLayout = styled.img.attrs({
   bottom: 0px;
 `;
 
+const ProductCardBottomRightImageSpacerBase = styled.div`
+  /* _layout / --spacer-base */
+
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
 class ProductCardBottomRight extends Component {
   render() {
     return (
@@ -78,6 +93,7 @@ class ProductCardBottomRight extends Component {
           <ProductCardBottomRightImageLayout>
             <ProductCardBottomRightImageFrameLayout />
           </ProductCardBottomRightImageLayout>
+          <ProductCardBottomRightImageSpacerBase />
         </ProductCardBottomRightElements>
       </ProductCardBottomRightLayout>
     );
