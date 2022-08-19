@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ProductCDark from '../../assets/images/body/ProductCDark.png';
 
 const ProductCardBottomRightLayout = styled.div`
   /* Product Card - Bottom Right Desktop */
@@ -57,12 +58,26 @@ const ProductCardBottomRightImageLayout = styled.div`
   flex-grow: 0;
 `;
 
+const ProductCardBottomRightImageFrameLayout = styled.img.attrs({
+  src: `${ProductCDark}`,
+})`
+  /* Image */
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+`;
+
 class ProductCardBottomRight extends Component {
   render() {
     return (
       <ProductCardBottomRightLayout>
         <ProductCardBottomRightElements>
-          <ProductCardBottomRightImageLayout />
+          <ProductCardBottomRightImageLayout>
+            <ProductCardBottomRightImageFrameLayout />
+          </ProductCardBottomRightImageLayout>
         </ProductCardBottomRightElements>
       </ProductCardBottomRightLayout>
     );
