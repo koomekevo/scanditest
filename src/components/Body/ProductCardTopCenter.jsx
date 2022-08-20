@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import ProductB from '../../assets/images/body/Product.png';
+import ProductB from '../../assets/images/body/ProductB.png';
 
 const ProductCardTopCenterLayout = styled.div`
   /* Product Card - Top Center Desktop */
