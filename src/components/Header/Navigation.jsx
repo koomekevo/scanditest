@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
 
 // Start of Navigation Styles
 const NavigationLayout = styled.div`
@@ -99,7 +98,7 @@ const ButtonWomenLabelLayout = styled.div`
   flex-grow: 0;
 `;
 
-const ButtonWomenLabel = styled(Link)`
+const ButtonWomenLabel = styled.div`
   /* Label */
 
   width: 65px;
@@ -921,14 +920,10 @@ export default class Navigation extends Component {
     return (
       <NavigationLayout>
         <HeaderNavigation>
-          <ButtonWomen>
+          <ButtonWomen as="a" href="#" style={{ textDecoration: 'none' }}>
             <ButtonWomenPaddingLeft />
             <ButtonWomenLabelLayout>
-              <Router>
-                <ButtonWomenLabel to="/src/pages/Product.jsx">
-                  WOMEN
-                </ButtonWomenLabel>
-              </Router>
+              <ButtonWomenLabel>WOMEN</ButtonWomenLabel>
               <ButtonWomenBorder />
             </ButtonWomenLabelLayout>
             <ButtonWomenPaddingRight />
