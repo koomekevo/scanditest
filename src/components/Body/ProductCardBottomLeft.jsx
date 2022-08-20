@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // eslint-disable-next-line no-unused-vars
-import styled from "styled-components";
-import CircleIcon from "../../assets/images/body/CircleIcon.svg";
-import ProductA from "../../assets/images/body/ProductA.png";
+import styled from 'styled-components';
+import CircleIcon from '../../assets/images/body/CircleIcon.svg';
+import ProductA from '../../assets/images/body/ProductA.png';
 
 const ProductCardBottomLeftLayout = styled.div`
   /* Product Card - Desktop Bottom Left Layout */
