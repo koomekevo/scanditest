@@ -69,9 +69,11 @@ const LayoutSpacerXLTwo = styled.div`
   flex-grow: 0;
 `;
 
-const GroupOne = styled.img.attrs({
-  src: `${group1}`,
-})`
+const GroupOne = styled.div`
+  /* Background Image URL */
+  background-image: url(${group1});
+
+
   /* Group 1 */
 
   width: 38px;
@@ -84,9 +86,10 @@ const GroupOne = styled.img.attrs({
   flex-grow: 0;
 `;
 
-const IconEmptyCart = styled.img.attrs({
-  src: `${emptycart}`,
-})`
+const IconEmptyCart = styled.div`
+  /* Background Image URL */
+  background-image: url(${emptycart});
+
   /* Icon / Empty Cart */
 
   width: 20px;
@@ -107,7 +110,7 @@ export default class Actions extends Component {
         </LayoutSpacerXLOne>
         <LayoutSpacerXLTwo />
         <GroupOne />
-        <IconEmptyCart />
+        <IconEmptyCart as="a" href="#" style={{ textDecoration: 'none' }} />
       </ActionsLayout>
     );
   }
