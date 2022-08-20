@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import group1 from '../../assets/images/header/Group1.svg';
 import emptycart from '../../assets/images/header/EmptyCart.svg';
 
@@ -73,7 +74,6 @@ const GroupOne = styled.div`
   /* Background Image URL */
   background-image: url(${group1});
 
-
   /* Group 1 */
 
   width: 38px;
@@ -86,10 +86,7 @@ const GroupOne = styled.div`
   flex-grow: 0;
 `;
 
-const IconEmptyCart = styled.div`
-  /* Background Image URL */
-  background-image: url(${emptycart});
-
+const IconEmptyCart = styled(Link)`
   /* Icon / Empty Cart */
 
   width: 20px;
@@ -110,7 +107,9 @@ export default class Actions extends Component {
         </LayoutSpacerXLOne>
         <LayoutSpacerXLTwo />
         <GroupOne />
-        <IconEmptyCart as="a" href="#" style={{ textDecoration: 'none' }} />
+        <IconEmptyCart to="/Cart.jsx">
+          <img src={emptycart} alt="cart" />
+        </IconEmptyCart>
       </ActionsLayout>
     );
   }
