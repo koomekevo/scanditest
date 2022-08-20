@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 // eslint-disable-next-line no-unused-vars
-import styled from 'styled-components';
-import CircleIcon from '../../assets/images/body/CircleIcon.svg';
-import ProductA from '../../assets/images/body/ProductA.png';
+import styled from "styled-components";
+import CircleIcon from "../../assets/images/body/CircleIcon.svg";
+import ProductA from "../../assets/images/body/ProductA.png";
 
 const ProductCardBottomLeftLayout = styled.div`
   /* Product Card - Desktop Bottom Left Layout */
@@ -77,6 +77,8 @@ const ProductCardBottomLeftCircleIconLayout = styled.img.attrs({
   height: 52px;
   right: 15px;
   bottom: -26px;
+  top: 304px;
+  left: 287px;
 
   /* --button-box-shadow */
 
@@ -160,25 +162,23 @@ const ProductCardBottomLeftContentTitle = styled.div`
 `;
 
 const ProductCardBottomLeftContentPrice = styled.div`
-/* Price */
+  /* Price */
 
+  /* Auto layout */
 
-/* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
+  width: 58px;
+  height: 29px;
 
-width: 58px;
-height: 29px;
+  /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 `;
 
 export default class ProductCardBottomLeft extends Component {
@@ -187,8 +187,8 @@ export default class ProductCardBottomLeft extends Component {
       <ProductCardBottomLeftLayout>
         <ProductCardBottomLeftElements>
           <ProductCardBottomLeftImageLayout>
-            <ProductCardBottomLeftCircleIconLayout />
             <ProductCardBottomLeftImageFrameLayout />
+            <ProductCardBottomLeftCircleIconLayout />
           </ProductCardBottomLeftImageLayout>
           <ProductCardBottomLeftImageSpacerBase />
           <ProductCardBottomLeftContent>
