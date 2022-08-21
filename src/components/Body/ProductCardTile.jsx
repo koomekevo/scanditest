@@ -1,31 +1,39 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
-// eslint-disable-next-line no-unused-vars
 import styled from 'styled-components';
 import CircleIcon from '../../assets/images/body/CircleIcon.svg';
-import ProductA from '../../assets/images/body/ProductA.png';
 
-const ProductCardBottomLeftLayout = styled.div`
-  /* Product Card - Desktop Bottom Left Layout */
+const Container = styled.div`
+  flex: 1;
+  margin: 5px;
+  min-width: 150px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 315px;
+  padding-bottom: 101px;
+  padding-left: 101px;
+  padding-right: 101px;
+`;
+
+const ProductCardTileLayout = styled.div`
+  /* Product Card - Top Right Desktop */
 
   /* Auto layout */
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
 
   position: absolute;
   width: 386px;
   height: 444px;
-  left: calc(50% - 386px / 2 - 427px);
-  bottom: 191px;
-
-  /* shadow */
-
-  filter: drop-shadow(0px 4px 35px rgba(168, 172, 176, 0.19));
 `;
 
-const ProductCardBottomLeftElements = styled.div`
+const ProductCardTileElements = styled.div`
   /* Product Card / Elements / Desktop */
 
   /* Auto layout */
@@ -42,9 +50,6 @@ const ProductCardBottomLeftElements = styled.div`
   /* --c-white */
 
   background: #ffffff;
-  /* --product-card-box-shadow:hover */
-
-  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
 
   /* Inside auto layout */
 
@@ -53,7 +58,7 @@ const ProductCardBottomLeftElements = styled.div`
   flex-grow: 0;
 `;
 
-const ProductCardBottomLeftImageLayout = styled.div`
+const ProductCardTileImageLayout = styled.div`
   /* Image */
 
   width: 354px;
@@ -67,7 +72,17 @@ const ProductCardBottomLeftImageLayout = styled.div`
   flex-grow: 0;
 `;
 
-const ProductCardBottomLeftCircleIconLayout = styled.img.attrs({
+const ProductCardTileImageFrameLayout = styled.img`
+  /* Image */
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+`;
+
+const ProductCardTileCircleIconLayout = styled.img.attrs({
   src: `${CircleIcon}`,
 })`
   /* Circle Icon Layout*/
@@ -85,19 +100,7 @@ const ProductCardBottomLeftCircleIconLayout = styled.img.attrs({
   filter: drop-shadow(0px 4px 11px rgba(29, 31, 34, 0.1));
 `;
 
-const ProductCardBottomLeftImageFrameLayout = styled.img.attrs({
-  src: `${ProductA}`,
-})`
-  /* Image */
-
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-`;
-
-const ProductCardBottomLeftImageSpacerBase = styled.div`
+const ProductCardTileImageSpacerBase = styled.div`
   /* _layout / --spacer-base */
 
   width: 24px;
@@ -112,7 +115,7 @@ const ProductCardBottomLeftImageSpacerBase = styled.div`
   flex-grow: 0;
 `;
 
-const ProductCardBottomLeftContent = styled.div`
+const ProductCardTileContent = styled.div`
   /* Content */
 
   /* Auto layout */
@@ -133,7 +136,7 @@ const ProductCardBottomLeftContent = styled.div`
   flex-grow: 0;
 `;
 
-const ProductCardBottomLeftContentTitle = styled.div`
+const ProductCardTileContentTitle = styled.div`
   /* Title */
 
   width: 354px;
@@ -149,9 +152,7 @@ const ProductCardBottomLeftContentTitle = styled.div`
   display: flex;
   align-items: center;
 
-  /* --c-black */
-
-  color: #1d1f22;
+  color: #8d8f9a;
 
   /* Inside auto layout */
 
@@ -161,7 +162,7 @@ const ProductCardBottomLeftContentTitle = styled.div`
   flex-grow: 0;
 `;
 
-const ProductCardBottomLeftContentPrice = styled.div`
+const ProductCardTileContentPrice = styled.div`
   /* Price */
 
   /* Auto layout */
@@ -180,27 +181,28 @@ const ProductCardBottomLeftContentPrice = styled.div`
   order: 1;
   flex-grow: 0;
 `;
-
-export default class ProductCardBottomLeft extends Component {
+export default class ProductCardTile extends Component {
   render() {
     return (
-      <ProductCardBottomLeftLayout>
-        <ProductCardBottomLeftElements>
-          <ProductCardBottomLeftImageLayout>
-            <ProductCardBottomLeftImageFrameLayout />
-            <ProductCardBottomLeftCircleIconLayout />
-          </ProductCardBottomLeftImageLayout>
-          <ProductCardBottomLeftImageSpacerBase />
-          <ProductCardBottomLeftContent>
-            <ProductCardBottomLeftContentTitle>
-              Apollo Running Short
-            </ProductCardBottomLeftContentTitle>
-            <ProductCardBottomLeftContentPrice>
-              $50.00
-            </ProductCardBottomLeftContentPrice>
-          </ProductCardBottomLeftContent>
-        </ProductCardBottomLeftElements>
-      </ProductCardBottomLeftLayout>
+      <Container>
+        <ProductCardTileLayout>
+          <ProductCardTileElements>
+            <ProductCardTileImageLayout>
+              <ProductCardTileImageFrameLayout src={this.props.item.img} />
+              <ProductCardTileCircleIconLayout />
+            </ProductCardTileImageLayout>
+            <ProductCardTileImageSpacerBase />
+            <ProductCardTileContent>
+              <ProductCardTileContentTitle>
+                {this.props.item.title}
+              </ProductCardTileContentTitle>
+              <ProductCardTileContentPrice>
+                {this.props.item.price}
+              </ProductCardTileContentPrice>
+            </ProductCardTileContent>
+          </ProductCardTileElements>
+        </ProductCardTileLayout>
+      </Container>
     );
   }
 }
