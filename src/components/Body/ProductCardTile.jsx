@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import CircleIcon from '../../assets/images/body/CircleIcon.svg';
 
-const Container = styled.div`
+const ProductContainer = styled.div`
   flex: 1;
   margin: 5px;
   min-width: 150px;
@@ -184,7 +184,7 @@ const ProductCardTileContentPrice = styled.div`
 export default class ProductCardTile extends Component {
   render() {
     return (
-      <Container>
+      <ProductContainer>
         <ProductCardTileLayout>
           <ProductCardTileElements>
             <ProductCardTileImageLayout>
@@ -202,7 +202,7 @@ export default class ProductCardTile extends Component {
             </ProductCardTileContent>
           </ProductCardTileElements>
         </ProductCardTileLayout>
-      </Container>
+      </ProductContainer>
     );
   }
 }
