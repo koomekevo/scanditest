@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import group1 from '../../assets/images/header/Group1.svg';
 import emptycart from '../../assets/images/header/EmptyCart.svg';
+import CurrencySwitcher from './CurrencySwitcher';
 
 const ActionsLayout = styled.div`
   /* Actions */
@@ -55,37 +55,6 @@ const SpacerXLOne = styled.div`
   box-shadow: 1px 3px 8px -1px rgba(0, 0, 0, 0.39);
 `;
 
-const LayoutSpacerXLTwo = styled.div`
-  /* _layout / --spacer-xl */
-
-  width: 40px;
-  height: 40px;
-
-  opacity: 0;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-`;
-
-const GroupOne = styled.div`
-  /* Background Image URL */
-  background-image: url(${group1});
-
-  /* Group 1 */
-
-  width: 38px;
-  height: 29px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-`;
-
 const IconEmptyCart = styled(Link)`
   /* Icon / Empty Cart */
 
@@ -105,8 +74,7 @@ export default class Actions extends Component {
         <LayoutSpacerXLOne>
           <SpacerXLOne />
         </LayoutSpacerXLOne>
-        <LayoutSpacerXLTwo />
-        <GroupOne />
+        <CurrencySwitcher />
         <IconEmptyCart to="/Cart.jsx">
           <img src={emptycart} alt="cart" />
         </IconEmptyCart>
