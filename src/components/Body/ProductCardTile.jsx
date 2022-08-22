@@ -13,9 +13,10 @@ const ProductContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-top: 315px;
   padding-left: 101px;
   padding-right: 101px;
+  padding-top: 315px;
+  top: 315px;
 `;
 
 const ProductCardTileLayout = styled.div`
@@ -27,6 +28,7 @@ const ProductCardTileLayout = styled.div`
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
+  top: 0px;
 
   position: absolute;
   width: 386px;
