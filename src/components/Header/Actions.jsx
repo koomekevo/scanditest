@@ -38,23 +38,6 @@ const LayoutSpacerXLOne = styled.div`
   flex-grow: 0;
 `;
 
-const SpacerXLOne = styled.div`
-  /* --spacer-xl */
-
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
-  /* --c-info-variant */
-
-  background: #b4d2f4;
-  /* style guid */
-
-  box-shadow: 1px 3px 8px -1px rgba(0, 0, 0, 0.39);
-`;
-
 const IconEmptyCart = styled(Link)`
   /* Icon / Empty Cart */
 
@@ -71,9 +54,7 @@ export default class Actions extends Component {
   render() {
     return (
       <ActionsLayout>
-        <LayoutSpacerXLOne>
-          <SpacerXLOne />
-        </LayoutSpacerXLOne>
+        <LayoutSpacerXLOne />
         <CurrencySwitcher />
         <IconEmptyCart to="../../pages/Cart.jsx">
           <img src={emptycart} alt="cart" />
