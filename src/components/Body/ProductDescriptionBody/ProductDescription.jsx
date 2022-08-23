@@ -105,7 +105,7 @@ const GroupFourZeroEight = styled.img.attrs({
   flex-grow: 0;
 `;
 
-const ColorLabel = styled.div`
+const ColorLabel = styled.label`
   /* COLOR: */
 
   position: absolute;
@@ -194,6 +194,51 @@ const AddToCartButtonLabel = styled.label`
   flex-grow: 0;
 `;
 
+const ProductPriceTag = styled.label`
+  /* $50.00 */
+
+  position: absolute;
+  width: 86px;
+  height: 46px;
+  left: 929px;
+  top: 494px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  /* or 75% */
+
+  display: flex;
+  align-items: center;
+
+  color: #1d1f22;
+`;
+
+const ProductPriceLabel = styled.label`
+  /* PRICE: */
+
+  position: absolute;
+  width: 50px;
+  height: 18px;
+  left: 929px;
+  top: 466px;
+
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1d1f22;
+`;
+
 class ProductDescription extends Component {
   render() {
     return (
@@ -215,6 +260,8 @@ class ProductDescription extends Component {
         <AddToCartButton>
           <AddToCartButtonLabel>ADD TO CART</AddToCartButtonLabel>
         </AddToCartButton>
+        <ProductPriceTag>$50.00</ProductPriceTag>
+        <ProductPriceLabel>PRICE:</ProductPriceLabel>
       </>
     );
   }
