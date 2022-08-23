@@ -239,6 +239,182 @@ const ProductPriceLabel = styled.label`
   color: #1d1f22;
 `;
 
+const ProductSizeLabel = styled.label`
+  /* SIZE: */
+
+  position: absolute;
+  width: 38px;
+  height: 18px;
+  left: 929px;
+  top: 273px;
+
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1d1f22;
+`;
+
+const RectangleThreeEightSix = styled.div`
+  /* Rectangle 386 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 63px;
+  height: 45px;
+  left: 1154px;
+  top: 299px;
+
+  border: 1px solid #1d1f22;
+`;
+
+const SizeL = styled.label`
+  /* L */
+
+  position: absolute;
+  width: 8px;
+  height: 18px;
+  left: 1183px;
+  top: 312px;
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #292929;
+`;
+
+const RectangleThreeEightTwo = styled.div`
+  /* Rectangle 382 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 63px;
+  height: 45px;
+  left: 1079px;
+  top: 299px;
+
+  border: 1px solid #1d1f22;
+`;
+
+const SizeM = styled.label`
+  /* M */
+
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  left: 1106px;
+  top: 312px;
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #292929;
+`;
+
+const RectangleThreeEightOne = styled.div`
+  /* Rectangle 381 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 63px;
+  height: 45px;
+  left: 929px;
+  top: 299px;
+
+  border: 1px solid #1d1f22;
+`;
+
+const SizeXS = styled.label`
+  /* XS */
+
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 952px;
+  top: 312px;
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #1d1f22;
+`;
+
+const RectangleThreeEightZero = styled.div`
+  /* Rectangle 380 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 63px;
+  height: 45px;
+  left: 1004px;
+  top: 299px;
+
+  background: #1d1f22;
+  border: 1px solid #1d1f22;
+`;
+
+const SizeS = styled.label`
+  /* S */
+
+  position: absolute;
+  width: 9px;
+  height: 18px;
+  left: 1031px;
+  top: 312px;
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+`;
+
 class ProductDescription extends Component {
   render() {
     return (
@@ -262,6 +438,15 @@ class ProductDescription extends Component {
         </AddToCartButton>
         <ProductPriceTag>$50.00</ProductPriceTag>
         <ProductPriceLabel>PRICE:</ProductPriceLabel>
+        <ProductSizeLabel>SIZE:</ProductSizeLabel>
+        <RectangleThreeEightSix />
+        <SizeL>L</SizeL>
+        <RectangleThreeEightTwo />
+        <SizeM>M</SizeM>
+        <RectangleThreeEightOne />
+        <SizeXS>XS</SizeXS>
+        <RectangleThreeEightZero />
+        <SizeS>S</SizeS>
       </>
     );
   }
