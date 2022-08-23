@@ -10,7 +10,7 @@ const ProductDescriptionLayout = styled.div`
   height: 933px;
 `;
 
-export default class ProductDescription extends Component {
+export default class PDP extends Component {
   render() {
     return (
       <ProductDescriptionLayout>

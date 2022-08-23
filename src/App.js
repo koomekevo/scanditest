@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Category from './pages/Category';
-import ProductDescription from './pages/ProductDescription';
+import PDP from './pages/PDP';
 import Cart from './pages/Cart';
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
       <Router>
         <Routes>
           <Route path="/" element={<Category />} />
-          <Route path="/pages/ProductDescription" element={<ProductDescription />} />
+          <Route path="/pages/PDP" element={<PDP />} />
           <Route path="/pages/Cart" element={<Cart />} />
         </Routes>
       </Router>
