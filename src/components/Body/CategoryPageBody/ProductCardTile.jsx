@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import CircleIcon from '../../assets/images/body/CircleIcon.svg';
+import CircleIcon from '../../../assets/images/body/CircleIcon.svg';
 
 const ProductContainer = styled.div`
   flex: 1;

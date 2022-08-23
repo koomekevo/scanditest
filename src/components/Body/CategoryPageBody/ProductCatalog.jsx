@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ProductCardTile from './ProductCardTile';
-import { productData } from './data';
+import { productData } from '../data';
 
 const Container = styled.div`
     padding: 20px;
