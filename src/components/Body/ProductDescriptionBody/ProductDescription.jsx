@@ -105,6 +105,29 @@ const GroupFourZeroEight = styled.img.attrs({
   flex-grow: 0;
 `;
 
+const ColorLabel = styled.div`
+  /* COLOR: */
+
+  position: absolute;
+  width: 55px;
+  height: 18px;
+  left: 929px;
+  top: 368px;
+
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1d1f22;
+`;
+
 class ProductDescription extends Component {
   render() {
     return (
@@ -117,6 +140,9 @@ class ProductDescription extends Component {
           <GroupFourZeroSeven />
           <GroupFourZeroEight />
         </ColorFrameOneSeven>
+        <ColorLabel>
+          COLOR:
+        </ColorLabel>
       </>
     );
   }
