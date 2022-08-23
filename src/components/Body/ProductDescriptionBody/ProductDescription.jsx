@@ -149,6 +149,51 @@ const ProductDescriptionContent = styled.div`
   color: #1d1f22;
 `;
 
+const AddToCartButton = styled.button`
+  /* _Button / Elements / Common */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+
+  position: absolute;
+  width: 292px;
+  height: 52px;
+  left: 929px;
+  top: 560px;
+
+  background: #5ece7b;
+`;
+
+const AddToCartButtonLabel = styled.label`
+  /* Label */
+
+  width: 105px;
+  height: 20px;
+
+  /* --button-font */
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  /* identical to box height, or 19px */
+
+  /* --c-white */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
 class ProductDescription extends Component {
   render() {
     return (
@@ -163,10 +208,13 @@ class ProductDescription extends Component {
         </ColorFrameOneSeven>
         <ColorLabel>COLOR:</ColorLabel>
         <ProductDescriptionContent>
-          Find stunning women&apos;s cocktail dresses and party dresses.
-          Stand out in lace and metallic cocktail dresses and party
-          dresses from all your favorite brands.
+          Find stunning women&apos;s cocktail dresses and party dresses. Stand
+          out in lace and metallic cocktail dresses and party dresses from all
+          your favorite brands.
         </ProductDescriptionContent>
+        <AddToCartButton>
+          <AddToCartButtonLabel>ADD TO CART</AddToCartButtonLabel>
+        </AddToCartButton>
       </>
     );
   }
