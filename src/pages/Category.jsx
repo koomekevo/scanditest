@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Title from '../components/Body/Title';
-import ProductCatalog from '../components/Body/CategoryPageBody/ProductCatalog';
+import ProductCatalog from '../components/Body/CategoryPageBody/AllCategory/ProductCatalog';
 import Header from '../components/Header/Header';
 
 const CategoryLayout = styled.div`

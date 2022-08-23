@@ -415,7 +415,7 @@ export default class Navigation extends Component {
           <ButtonWomen as="a" href="#" style={{ textDecoration: 'none' }}>
             <ButtonWomenPaddingLeft />
             <ButtonWomenLabelLayout>
-              <ButtonWomenLabel>WOMEN</ButtonWomenLabel>
+              <ButtonWomenLabel>ALL</ButtonWomenLabel>
               <ButtonWomenBorder />
             </ButtonWomenLabelLayout>
             <ButtonWomenPaddingRight />
@@ -423,7 +423,7 @@ export default class Navigation extends Component {
           <ButtonMen>
             <ButtonMenPaddingLeft />
             <ButtonMenLabelLayout>
-              <ButtonMenLabel>MEN</ButtonMenLabel>
+              <ButtonMenLabel>TECH</ButtonMenLabel>
               <ButtonMenBorder />
             </ButtonMenLabelLayout>
             <ButtonMenPaddingRight />
@@ -431,7 +431,7 @@ export default class Navigation extends Component {
           <ButtonKids>
             <ButtonKidsPaddingLeft />
             <ButtonKidsLabelLayout>
-              <ButtonKidsLabel>KIDS</ButtonKidsLabel>
+              <ButtonKidsLabel>CLOTHES</ButtonKidsLabel>
               <ButtonKidsBorder />
             </ButtonKidsLabelLayout>
             <ButtonKidsPaddingRight />
