@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Header from '../components/Header/Header';
 
-const ProductDescriptionLayout = styled.div`
+const PDPLayout = styled.div`
   /* PDP */
 
   position: relative;
@@ -13,9 +13,9 @@ const ProductDescriptionLayout = styled.div`
 export default class PDP extends Component {
   render() {
     return (
-      <ProductDescriptionLayout>
+      <PDPLayout>
         <Header />
-      </ProductDescriptionLayout>
+      </PDPLayout>
     );
   }
 }
