@@ -56,7 +56,7 @@ export default class Actions extends Component {
       <ActionsLayout>
         <LayoutSpacerXLOne />
         <CurrencySwitcher />
-        <IconEmptyCart to="../../pages/Cart.jsx">
+        <IconEmptyCart to="../../pages/Cart">
           <img src={emptycart} alt="cart" />
         </IconEmptyCart>
       </ActionsLayout>
