@@ -128,6 +128,27 @@ const ColorLabel = styled.div`
   color: #1d1f22;
 `;
 
+const ProductDescriptionContent = styled.div`
+  /* Description */
+
+  position: absolute;
+  width: 292px;
+  height: 103px;
+  left: calc(50% - 292px / 2 + 355px);
+  bottom: 178px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 159.96%;
+  /* or 26px */
+
+  /* --c-text */
+
+  color: #1d1f22;
+`;
+
 class ProductDescription extends Component {
   render() {
     return (
@@ -140,9 +161,12 @@ class ProductDescription extends Component {
           <GroupFourZeroSeven />
           <GroupFourZeroEight />
         </ColorFrameOneSeven>
-        <ColorLabel>
-          COLOR:
-        </ColorLabel>
+        <ColorLabel>COLOR:</ColorLabel>
+        <ProductDescriptionContent>
+          Find stunning women&apos;s cocktail dresses and party dresses.
+          Stand out in lace and metallic cocktail dresses and party
+          dresses from all your favorite brands.
+        </ProductDescriptionContent>
       </>
     );
   }
