@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Header from '../components/Header/Header';
+import ProductDescription from '../components/Body/ProductDescriptionBody/ProductDescription';
 
 const PDPLayout = styled.div`
   /* PDP */
@@ -15,6 +16,7 @@ export default class PDP extends Component {
     return (
       <PDPLayout>
         <Header />
+        <ProductDescription />
       </PDPLayout>
     );
   }
