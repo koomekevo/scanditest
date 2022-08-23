@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Logo from './Logo';
 import Navigation from './Navigation';
 import Actions from './Actions';
-import Surface from './Surface';
 
 const Container = styled.nav`
   /* Header - Desktop */
@@ -19,7 +18,6 @@ export default class Header extends Component {
   render() {
     return (
       <Container>
-        <Surface />
         <Navigation />
         <Logo />
         <Actions />

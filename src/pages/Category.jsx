@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Header from '../components/Header/Header';
 import Title from '../components/Body/Title';
 import ProductCatalog from '../components/Body/ProductCatalog';
+import Header from '../components/Header/Header';
 
 const CategoryLayout = styled.div`
   /* Category */
