@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 const FrameThreeTwo = styled.div`
   /* Frame 32 */
@@ -105,15 +105,81 @@ const Quantity = styled.div`
   flex-grow: 0;
 `;
 
+const FrameThreeZero = styled.div`
+  /* Frame 30 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 44px;
+
+  width: 198px;
+  height: 28px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+const Total = styled.div`
+  /* Total: */
+
+  width: 60px;
+  height: 28px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  text-align: right;
+
+  color: #1d1f22;
+`;
+
+const TotalAmount = styled.div`
+  /* Total: */
+
+  width: 60px;
+  height: 28px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  text-align: right;
+
+  color: #1d1f22;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
 export default class CartBody extends Component {
   render() {
     return (
       <FrameThreeTwo>
         <FrameThreeOne>
           <FrameTwoNine>
-            <Tax>Tax 21%: $42.00</Tax>
+            <Tax>Tax 21%:&nbsp;&nbsp;$42.00</Tax>
             <Quantity>Quantity: 3</Quantity>
           </FrameTwoNine>
+          <FrameThreeZero>
+            <Total>Total:</Total>
+            <TotalAmount>$200:00</TotalAmount>
+          </FrameThreeZero>
         </FrameThreeOne>
       </FrameThreeTwo>
     );
