@@ -437,6 +437,18 @@ const ApolloRunningShort = styled.h1`
   color: #1d1f22;
 `;
 
+const SelectedProductImage = styled.img.attrs({
+  src: `${ProductD}`,
+})`
+  /* Image */
+
+  position: absolute;
+  width: 610px;
+  height: 511px;
+  left: 219px;
+  top: 162px;
+`;
+
 class ProductDescription extends Component {
   render() {
     return (
@@ -476,6 +488,7 @@ class ProductDescription extends Component {
           <br />
           Running Short
         </ApolloRunningShort>
+        <SelectedProductImage />
       </>
     );
   }
