@@ -415,6 +415,28 @@ const SizeS = styled.label`
   color: #ffffff;
 `;
 
+const ApolloRunningShort = styled.h1`
+  /* Apollo */
+
+  position: absolute;
+  width: 292px;
+  height: 27px;
+  left: 929px;
+  top: 160px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  /* identical to box height, or 90% */
+
+  display: flex;
+  align-items: center;
+
+  color: #1d1f22;
+`;
+
 class ProductDescription extends Component {
   render() {
     return (
@@ -447,6 +469,13 @@ class ProductDescription extends Component {
         <SizeXS>XS</SizeXS>
         <RectangleThreeEightZero />
         <SizeS>S</SizeS>
+        <ApolloRunningShort>
+          Apollo
+          {' '}
+          <br />
+          <br />
+          Running Short
+        </ApolloRunningShort>
       </>
     );
   }
