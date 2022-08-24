@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Sliderleftbutton from '../../../assets/images/body/Sliderleftbutton.svg';
+import Sliderrightbutton from '../../../assets/images/body/Sliderrightbutton.svg';
 
 const FrameThreeTwo = styled.div`
   /* Frame 32 */
@@ -167,21 +169,75 @@ const TotalAmount = styled.div`
   order: 0;
   flex-grow: 0;
 `;
+
+const FrameTwoSix = styled.div`
+  /* Frame 26 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 56px;
+  height: 24px;
+  left: 1268px;
+  top: 528px;
+`;
+
+const SliderLeftButton = styled.img.attrs({
+  src: `${Sliderleftbutton}`,
+})`
+  /* Group 1417 */
+
+  width: 24px;
+  height: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+const SliderRightButton = styled.img.attrs({
+  src: `${Sliderrightbutton}`,
+})`
+  /* Group 1418 */
+
+  width: 24px;
+  height: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
 export default class CartBody extends Component {
   render() {
     return (
-      <FrameThreeTwo>
-        <FrameThreeOne>
-          <FrameTwoNine>
-            <Tax>Tax 21%:&nbsp;&nbsp;$42.00</Tax>
-            <Quantity>Quantity: 3</Quantity>
-          </FrameTwoNine>
-          <FrameThreeZero>
-            <Total>Total:</Total>
-            <TotalAmount>$200:00</TotalAmount>
-          </FrameThreeZero>
-        </FrameThreeOne>
-      </FrameThreeTwo>
+      <>
+        <FrameThreeTwo>
+          <FrameThreeOne>
+            <FrameTwoNine>
+              <Tax>Tax 21%:&nbsp;&nbsp;$42.00</Tax>
+              <Quantity>Quantity: 3</Quantity>
+            </FrameTwoNine>
+            <FrameThreeZero>
+              <Total>Total:</Total>
+              <TotalAmount>$200:00</TotalAmount>
+            </FrameThreeZero>
+          </FrameThreeOne>
+        </FrameThreeTwo>
+        <FrameTwoSix>
+          <SliderLeftButton />
+          <SliderRightButton />
+        </FrameTwoSix>
+      </>
     );
   }
 }
