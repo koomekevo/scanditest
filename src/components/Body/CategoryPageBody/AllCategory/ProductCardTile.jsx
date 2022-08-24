@@ -1,6 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import CircleIcon from '../../../../assets/images/body/CircleIcon.svg';
 
@@ -190,7 +191,9 @@ export default class ProductCardTile extends Component {
         <ProductCardTileLayout>
           <ProductCardTileElements>
             <ProductCardTileImageLayout>
-              <ProductCardTileImageFrameLayout src={this.props.item.img} />
+              <Link to="../../../pages/PDP">
+                <ProductCardTileImageFrameLayout src={this.props.item.img} />
+              </Link>
               <ProductCardTileCircleIconLayout />
             </ProductCardTileImageLayout>
             <ProductCardTileImageSpacerBase />
