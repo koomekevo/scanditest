@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import CartBody from '../components/Body/CartPageBody/CartBody';
 import Header from '../components/Header/Header';
 
 const CartLayout = styled.div`
@@ -15,6 +16,7 @@ export default class Cart extends Component {
     return (
       <CartLayout>
         <Header />
+        <CartBody />
       </CartLayout>
     );
   }
