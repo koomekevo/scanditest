@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import alogo from '../../assets/images/header/a-logo.svg';
 
 // Logo Styles
@@ -19,7 +20,9 @@ const LogoLayout = styled.img.attrs({
 export default class Logo extends Component {
   render() {
     return (
-      <LogoLayout />
+      <Link to="/">
+        <LogoLayout />
+      </Link>
     );
   }
 }
