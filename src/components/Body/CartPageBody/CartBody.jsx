@@ -325,6 +325,50 @@ const RectangleThreeEightEight = styled.div`
 
   color: #1d1f22;
 `;
+
+const GroupSixThreeThreeLayout = styled.div`
+  /* Group 633 */
+
+  width: 63px;
+  height: 45px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+const RectangleThreeEightSeven = styled.div`
+  /* Rectangle 387 */
+
+  box-sizing: border-box;
+
+  width: 63px;
+  height: 45px;
+  left: 71px;
+  top: 0px;
+  padding-left: 25px;
+
+  background: #1d1f22;
+  border: 1px solid #1d1f22;
+
+  /* M */
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+`;
 export default class CartBody extends Component {
   render() {
     return (
@@ -351,6 +395,9 @@ export default class CartBody extends Component {
             <GroupSixThreeTwoLayout>
               <RectangleThreeEightEight>S</RectangleThreeEightEight>
             </GroupSixThreeTwoLayout>
+            <GroupSixThreeThreeLayout>
+              <RectangleThreeEightSeven>M</RectangleThreeEightSeven>
+            </GroupSixThreeThreeLayout>
           </FrameOneEightLayout>
         </FrameTwoZero>
       </>
