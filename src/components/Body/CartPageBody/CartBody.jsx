@@ -217,6 +217,114 @@ const SliderRightButton = styled.img.attrs({
   order: 1;
   flex-grow: 0;
 `;
+
+const FrameTwoZero = styled.div`
+  /* Frame 20 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 7px;
+
+  position: absolute;
+  width: 134px;
+  height: 70px;
+  left: 100px;
+  top: 759px;
+`;
+
+const FrameTwoZeroSizeLayout = styled.div`
+  /* SIZE: */
+
+  width: 38px;
+  height: 18px;
+
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1d1f22;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+const FrameOneEightLayout = styled.div`
+  /* Frame 18 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 134px;
+  height: 45px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+const GroupSixThreeTwoLayout = styled.div`
+  /* Group 632 */
+
+  width: 63px;
+  height: 45px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+const RectangleThreeEightEight = styled.div`
+  /* Rectangle 388 */
+
+  box-sizing: border-box;
+
+  width: 63px;
+  height: 45px;
+  left: 0px;
+  top: 0px;
+  padding-left: 25px;
+
+  border: 1px solid #1d1f22;
+
+  /* S */
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #1d1f22;
+`;
 export default class CartBody extends Component {
   render() {
     return (
@@ -237,6 +345,14 @@ export default class CartBody extends Component {
           <SliderLeftButton />
           <SliderRightButton />
         </FrameTwoSix>
+        <FrameTwoZero>
+          <FrameTwoZeroSizeLayout>SIZE:</FrameTwoZeroSizeLayout>
+          <FrameOneEightLayout>
+            <GroupSixThreeTwoLayout>
+              <RectangleThreeEightEight>S</RectangleThreeEightEight>
+            </GroupSixThreeTwoLayout>
+          </FrameOneEightLayout>
+        </FrameTwoZero>
       </>
     );
   }
