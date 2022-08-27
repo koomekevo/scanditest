@@ -369,6 +369,50 @@ const RectangleThreeEightSeven = styled.div`
 
   color: #ffffff;
 `;
+
+const FrameTwoTwo = styled.div`
+  /* Frame 22 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 116px;
+  height: 62px;
+  left: 100px;
+  top: 845px;
+`;
+
+const FrameTwoTwoColorLayout = styled.div`
+  /* COLOR: */
+
+  width: 55px;
+  height: 18px;
+
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1d1f22;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
 export default class CartBody extends Component {
   render() {
     return (
@@ -400,6 +444,9 @@ export default class CartBody extends Component {
             </GroupSixThreeThreeLayout>
           </FrameOneEightLayout>
         </FrameTwoZero>
+        <FrameTwoTwo>
+          <FrameTwoTwoColorLayout />
+        </FrameTwoTwo>
       </>
     );
   }
