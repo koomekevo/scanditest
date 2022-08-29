@@ -5,6 +5,7 @@ import Sliderrightbutton from '../../../assets/images/body/Sliderrightbutton.svg
 import Group631Black from '../../../assets/images/body/Group631Black.svg';
 import Group407Blue from '../../../assets/images/body/Group407Blue.svg';
 import Group408Orange from '../../../assets/images/body/Group408Orange.svg';
+import Group1421MinusSquare from '../../../assets/images/body/Group1421MinusSquare.svg';
 
 const FrameThreeTwo = styled.div`
   /* Frame 32 */
@@ -483,6 +484,32 @@ const GroupFourZeroEight = styled.img.attrs({
   order: 2;
   flex-grow: 0;
 `;
+
+const GroupOneFourTwoOne = styled.div`
+  /* Group 1421 */
+
+  position: absolute;
+  width: 45px;
+  height: 288px;
+  left: 1071px;
+  top: 617px;
+`;
+
+const GroupOneFourTwoOneMinusSquare = styled.img.attrs({
+  src: `${Group1421MinusSquare}`,
+})`
+  /* minus-square */
+
+  box-sizing: border-box;
+
+  width: 45px;
+  height: 45px;
+  left: 1071px;
+  top: 860px;
+
+  border: 1px solid #1d1f22;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -522,6 +549,9 @@ export default class CartBody extends Component {
             <GroupFourZeroEight />
           </FrameOneSevenLayout>
         </FrameTwoTwo>
+        <GroupOneFourTwoOne>
+          <GroupOneFourTwoOneMinusSquare />
+        </GroupOneFourTwoOne>
       </>
     );
   }
