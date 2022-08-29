@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Sliderleftbutton from '../../../assets/images/body/Sliderleftbutton.svg';
 import Sliderrightbutton from '../../../assets/images/body/Sliderrightbutton.svg';
 import Group631Black from '../../../assets/images/body/Group631Black.svg';
+import Group407Blue from '../../../assets/images/body/Group407Blue.svg';
+import Group408Orange from '../../../assets/images/body/Group408Orange.svg';
 
 const FrameThreeTwo = styled.div`
   /* Frame 32 */
@@ -415,6 +417,28 @@ const FrameTwoTwoColorLayout = styled.div`
   flex-grow: 0;
 `;
 
+const FrameOneSevenLayout = styled.div`
+  /* Frame 17 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 116px;
+  height: 36px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
 const GroupSixThreeOne = styled.img.attrs({
   src: `${Group631Black}`,
 })`
@@ -427,6 +451,36 @@ const GroupSixThreeOne = styled.img.attrs({
 
   flex: none;
   order: 0;
+  flex-grow: 0;
+`;
+
+const GroupFourZeroSeven = styled.img.attrs({
+  src: `${Group407Blue}`,
+})`
+  /* Group 407 */
+
+  width: 32px;
+  height: 32px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+const GroupFourZeroEight = styled.img.attrs({
+  src: `${Group408Orange}`,
+})`
+  /* Group 408 */
+
+  width: 32px;
+  height: 32px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
   flex-grow: 0;
 `;
 export default class CartBody extends Component {
@@ -462,7 +516,11 @@ export default class CartBody extends Component {
         </FrameTwoZero>
         <FrameTwoTwo>
           <FrameTwoTwoColorLayout>COLOR:</FrameTwoTwoColorLayout>
-          <GroupSixThreeOne />
+          <FrameOneSevenLayout>
+            <GroupSixThreeOne />
+            <GroupFourZeroSeven />
+            <GroupFourZeroEight />
+          </FrameOneSevenLayout>
         </FrameTwoTwo>
       </>
     );
