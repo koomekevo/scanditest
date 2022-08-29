@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Sliderleftbutton from '../../../assets/images/body/Sliderleftbutton.svg';
 import Sliderrightbutton from '../../../assets/images/body/Sliderrightbutton.svg';
+import Group631Black from '../../../assets/images/body/Group631Black.svg';
 
 const FrameThreeTwo = styled.div`
   /* Frame 32 */
@@ -413,6 +414,21 @@ const FrameTwoTwoColorLayout = styled.div`
   order: 0;
   flex-grow: 0;
 `;
+
+const GroupSixThreeOne = styled.img.attrs({
+  src: `${Group631Black}`,
+})`
+  /* Group 631 */
+
+  width: 36px;
+  height: 36px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
 export default class CartBody extends Component {
   render() {
     return (
@@ -446,6 +462,7 @@ export default class CartBody extends Component {
         </FrameTwoZero>
         <FrameTwoTwo>
           <FrameTwoTwoColorLayout>COLOR:</FrameTwoTwoColorLayout>
+          <GroupSixThreeOne />
         </FrameTwoTwo>
       </>
     );
