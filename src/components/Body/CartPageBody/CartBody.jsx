@@ -7,6 +7,7 @@ import Group407Blue from '../../../assets/images/body/Group407Blue.svg';
 import Group408Orange from '../../../assets/images/body/Group408Orange.svg';
 import Group1421MinusSquare from '../../../assets/images/body/Group1421MinusSquare.svg';
 import Group1421PlusSquare from '../../../assets/images/body/Group1421PlusSquare.svg';
+import ProductDCart from '../../../assets/images/body/ProductDCart.png';
 
 const FrameThreeTwo = styled.div`
   /* Frame 32 */
@@ -558,6 +559,18 @@ const FrameTwoFive = styled.div`
   top: 865px;
 `;
 
+const ProductDCartLayout = styled.img.attrs({
+  src: `${ProductDCart}`,
+})`
+  /* Product D */
+
+  position: absolute;
+  left: 79.17%;
+  right: 6.94%;
+  top: 44.23%;
+  bottom: 35.13%;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -602,6 +615,7 @@ export default class CartBody extends Component {
           <GroupOneFourTwoOneLabel>2</GroupOneFourTwoOneLabel>
           <GroupOneFourTwoOneMinusSquare />
         </GroupOneFourTwoOne>
+        <ProductDCartLayout />
         <FrameTwoFive>
           <SliderLeftButton />
           <SliderRightButton />
