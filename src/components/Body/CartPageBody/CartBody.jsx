@@ -6,6 +6,7 @@ import Group631Black from '../../../assets/images/body/Group631Black.svg';
 import Group407Blue from '../../../assets/images/body/Group407Blue.svg';
 import Group408Orange from '../../../assets/images/body/Group408Orange.svg';
 import Group1421MinusSquare from '../../../assets/images/body/Group1421MinusSquare.svg';
+import Group1421PlusSquare from '../../../assets/images/body/Group1421PlusSquare.svg';
 
 const FrameThreeTwo = styled.div`
   /* Frame 32 */
@@ -493,6 +494,18 @@ const GroupOneFourTwoOne = styled.div`
   height: 288px;
   left: 1071px;
   top: 617px;
+  display: flex;
+  flex-direction: column;
+`;
+
+const GroupOneFourTwoOnePlusSquare = styled.img.attrs({
+  src: `${Group1421PlusSquare}`,
+})`
+  /* plus-square */
+
+  position: relative;
+  width: 45px;
+  height: 45px;
 `;
 
 const GroupOneFourTwoOneMinusSquare = styled.img.attrs({
@@ -504,10 +517,27 @@ const GroupOneFourTwoOneMinusSquare = styled.img.attrs({
 
   width: 45px;
   height: 45px;
-  left: 1071px;
-  top: 860px;
+  margin-top: auto;
 
   border: 1px solid #1d1f22;
+`;
+
+const GroupOneFourTwoOneLabel = styled.p`
+  /* Label */
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  /* or 38px */
+
+  align-items: center;
+  text-align: center;
+  margin-top: 71px;
+  margin-bottom: 95px;
+
+  color: #1d1f22;
 `;
 
 export default class CartBody extends Component {
@@ -550,6 +580,8 @@ export default class CartBody extends Component {
           </FrameOneSevenLayout>
         </FrameTwoTwo>
         <GroupOneFourTwoOne>
+          <GroupOneFourTwoOnePlusSquare />
+          <GroupOneFourTwoOneLabel>2</GroupOneFourTwoOneLabel>
           <GroupOneFourTwoOneMinusSquare />
         </GroupOneFourTwoOne>
       </>
