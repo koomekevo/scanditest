@@ -540,6 +540,24 @@ const GroupOneFourTwoOneLabel = styled.p`
   color: #1d1f22;
 `;
 
+const FrameTwoFive = styled.div`
+  /* Frame 25 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 56px;
+  height: 24px;
+  left: 1268px;
+  top: 865px;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -584,6 +602,10 @@ export default class CartBody extends Component {
           <GroupOneFourTwoOneLabel>2</GroupOneFourTwoOneLabel>
           <GroupOneFourTwoOneMinusSquare />
         </GroupOneFourTwoOne>
+        <FrameTwoFive>
+          <SliderLeftButton />
+          <SliderRightButton />
+        </FrameTwoFive>
       </>
     );
   }
