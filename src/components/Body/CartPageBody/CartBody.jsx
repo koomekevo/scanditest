@@ -571,6 +571,28 @@ const ProductDCartLayout = styled.img.attrs({
   bottom: 35.13%;
 `;
 
+const SecondItemPrice = styled.div`
+  /* $75.00 */
+
+  position: absolute;
+  width: 77px;
+  height: 32px;
+  left: 100px;
+  top: 707px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+  color: #1d1f22;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -620,6 +642,7 @@ export default class CartBody extends Component {
           <SliderLeftButton />
           <SliderRightButton />
         </FrameTwoFive>
+        <SecondItemPrice>$75.00</SecondItemPrice>
       </>
     );
   }
