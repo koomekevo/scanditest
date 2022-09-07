@@ -593,6 +593,27 @@ const SecondItemPrice = styled.div`
   color: #1d1f22;
 `;
 
+const SecondItemName = styled.div`
+  /* Jupiter */
+
+  position: absolute;
+  width: 292px;
+  height: 27px;
+  left: 100px;
+  top: 617px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  /* identical to box height, or 90% */
+
+  display: flex;
+  align-items: center;
+  color: #1d1f22;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -643,6 +664,13 @@ export default class CartBody extends Component {
           <SliderRightButton />
         </FrameTwoFive>
         <SecondItemPrice>$75.00</SecondItemPrice>
+        <SecondItemName>
+          Jupiter
+          {' '}
+          <br />
+          <br />
+          Wayfarer
+        </SecondItemName>
       </>
     );
   }
