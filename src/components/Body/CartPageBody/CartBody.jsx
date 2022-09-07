@@ -614,6 +614,24 @@ const SecondItemName = styled.div`
   color: #1d1f22;
 `;
 
+const FrameTwoOne = styled.div`
+  /* Frame 21 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 116px;
+  height: 62px;
+  left: 101px;
+  top: 500px;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -671,6 +689,7 @@ export default class CartBody extends Component {
           <br />
           Wayfarer
         </SecondItemName>
+        <FrameTwoOne />
       </>
     );
   }
