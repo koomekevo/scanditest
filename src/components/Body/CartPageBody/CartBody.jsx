@@ -689,7 +689,9 @@ export default class CartBody extends Component {
           <br />
           Wayfarer
         </SecondItemName>
-        <FrameTwoOne />
+        <FrameTwoOne>
+          <FrameTwoTwoColorLayout>COLOR:</FrameTwoTwoColorLayout>
+        </FrameTwoOne>
       </>
     );
   }
