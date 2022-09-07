@@ -691,6 +691,9 @@ export default class CartBody extends Component {
         </SecondItemName>
         <FrameTwoOne>
           <FrameTwoTwoColorLayout>COLOR:</FrameTwoTwoColorLayout>
+          <FrameOneSevenLayout>
+            <GroupSixThreeOne />
+          </FrameOneSevenLayout>
         </FrameTwoOne>
       </>
     );
