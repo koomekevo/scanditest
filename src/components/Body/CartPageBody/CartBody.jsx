@@ -632,6 +632,24 @@ const FrameTwoOne = styled.div`
   top: 500px;
 `;
 
+const FrameOneNine = styled.div`
+  /* Frame 19 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 7px;
+
+  position: absolute;
+  width: 276px;
+  height: 70px;
+  left: 100px;
+  top: 414px;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -697,6 +715,7 @@ export default class CartBody extends Component {
             <GroupFourZeroEight />
           </FrameOneSevenLayout>
         </FrameTwoOne>
+        <FrameOneNine />
       </>
     );
   }
