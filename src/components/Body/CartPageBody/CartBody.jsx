@@ -715,7 +715,17 @@ export default class CartBody extends Component {
             <GroupFourZeroEight />
           </FrameOneSevenLayout>
         </FrameTwoOne>
-        <FrameOneNine />
+        <FrameOneNine>
+          <FrameTwoZeroSizeLayout>SIZE:</FrameTwoZeroSizeLayout>
+          <FrameOneEightLayout>
+            <GroupSixThreeTwoLayout>
+              <RectangleThreeEightEight>S</RectangleThreeEightEight>
+            </GroupSixThreeTwoLayout>
+            <GroupSixThreeThreeLayout>
+              <RectangleThreeEightSeven>M</RectangleThreeEightSeven>
+            </GroupSixThreeThreeLayout>
+          </FrameOneEightLayout>
+        </FrameOneNine>
       </>
     );
   }
