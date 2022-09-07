@@ -650,6 +650,50 @@ const FrameOneNine = styled.div`
   top: 414px;
 `;
 
+const FirstItemPrice = styled.div`
+  /* $50.00 */
+
+  position: absolute;
+  width: 79px;
+  height: 24px;
+  left: 100px;
+  top: 370px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+
+  color: #1d1f22;
+`;
+
+const FirstItemName = styled.div`
+  /* Apollo */
+
+  position: absolute;
+  width: 292px;
+  height: 27px;
+  left: 101px;
+  top: 280px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  /* identical to box height, or 90% */
+
+  display: flex;
+  align-items: center;
+
+  color: #1d1f22;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -726,6 +770,14 @@ export default class CartBody extends Component {
             </GroupSixThreeThreeLayout>
           </FrameOneEightLayout>
         </FrameOneNine>
+        <FirstItemPrice>$50.00</FirstItemPrice>
+        <FirstItemName>
+          Apollo
+          {' '}
+          <br />
+          <br />
+          Running Short
+        </FirstItemName>
       </>
     );
   }
