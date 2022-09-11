@@ -694,6 +694,18 @@ const FirstItemName = styled.div`
   color: #1d1f22;
 `;
 
+const RectangleTwoOneThreeFive = styled.div`
+  /* Rectangle 2135 */
+
+  position: absolute;
+  width: 1240px;
+  height: 1px;
+  left: 100px;
+  top: 929px;
+
+  background: #e5e5e5;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -778,6 +790,7 @@ export default class CartBody extends Component {
           <br />
           Running Short
         </FirstItemName>
+        <RectangleTwoOneThreeFive />
       </>
     );
   }
