@@ -706,6 +706,18 @@ const RectangleTwoOneThreeFive = styled.div`
   background: #e5e5e5;
 `;
 
+const RectangleThirtySeven = styled.div`
+  /* Rectangle 37 */
+
+  position: absolute;
+  width: 1240px;
+  height: 1px;
+  left: 100px;
+  top: 592px;
+
+  background: #e5e5e5;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -791,6 +803,7 @@ export default class CartBody extends Component {
           Running Short
         </FirstItemName>
         <RectangleTwoOneThreeFive />
+        <RectangleThirtySeven />
       </>
     );
   }
