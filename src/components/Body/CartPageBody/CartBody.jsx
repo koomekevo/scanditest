@@ -730,6 +730,27 @@ const RectangleThreeFive = styled.div`
   background: #e5e5e5;
 `;
 
+const CartLabel = styled.h1`
+  /* Cart */
+
+  position: absolute;
+  width: 84px;
+  height: 40px;
+  left: 100px;
+  top: 150px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+
+  text-transform: uppercase;
+
+  color: #1d1f22;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -817,6 +838,7 @@ export default class CartBody extends Component {
         <RectangleTwoOneThreeFive />
         <RectangleThirtySeven />
         <RectangleThreeFive />
+        <CartLabel>CART</CartLabel>
       </>
     );
   }
