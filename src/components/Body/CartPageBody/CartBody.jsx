@@ -713,7 +713,7 @@ const RectangleThirtySeven = styled.div`
   width: 1240px;
   height: 1px;
   left: 100px;
-  top: 592px;
+  top: 582px;
 
   background: #e5e5e5;
 `;
