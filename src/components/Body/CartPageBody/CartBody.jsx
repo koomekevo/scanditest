@@ -725,7 +725,7 @@ const RectangleThreeFive = styled.div`
   width: 1240px;
   height: 1px;
   left: 100px;
-  top: 255px;
+  top: 240px;
 
   background: #e5e5e5;
 `;
