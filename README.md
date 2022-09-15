@@ -5,6 +5,9 @@ This is an ecommerce site made with React based on this [Figma](https://www.figm
 
 - React
 - GraphQL
+
+## Live Demo
+https://kevin-scanditest.netlify.app/pages/Cart
  
 ## Getting Started
 
@@ -12,7 +15,9 @@ To get a local copy up and running follow these simple example steps.
 
 Clone the repo with `https://github.com/koomekevo/scanditest.git`
 
-Run `cd scanditest` to access tha app.
+Run `cd scanditest` to access the app.
+
+Run `npm install` to install dependencies.
 
 Run `npm start` to start the app.
 ## Authors
