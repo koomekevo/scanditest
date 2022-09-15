@@ -751,6 +751,16 @@ const CartLabel = styled.h1`
   color: #1d1f22;
 `;
 
+const GroupSixThreeFour = styled.div`
+  /* Group 634 */
+
+  position: absolute;
+  width: 45px;
+  height: 288px;
+  left: 1071px;
+  top: 280px;
+`;
+
 export default class CartBody extends Component {
   render() {
     return (
@@ -839,6 +849,7 @@ export default class CartBody extends Component {
         <RectangleThirtySeven />
         <RectangleThreeFive />
         <CartLabel>CART</CartLabel>
+        <GroupSixThreeFour />
       </>
     );
   }
