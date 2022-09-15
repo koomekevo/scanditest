@@ -760,7 +760,6 @@ const GroupSixThreeFour = styled.div`
   left: 1071px;
   top: 265px;
 `;
-
 export default class CartBody extends Component {
   render() {
     return (
@@ -854,6 +853,10 @@ export default class CartBody extends Component {
           <GroupOneFourTwoOneLabel>1</GroupOneFourTwoOneLabel>
           <GroupOneFourTwoOneMinusSquare />
         </GroupSixThreeFour>
+        <FrameTwoFive>
+          <SliderLeftButton />
+          <SliderRightButton />
+        </FrameTwoFive>
       </>
     );
   }
