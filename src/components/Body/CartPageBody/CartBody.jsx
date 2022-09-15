@@ -849,7 +849,11 @@ export default class CartBody extends Component {
         <RectangleThirtySeven />
         <RectangleThreeFive />
         <CartLabel>CART</CartLabel>
-        <GroupSixThreeFour />
+        <GroupSixThreeFour>
+          <GroupOneFourTwoOnePlusSquare />
+          <GroupOneFourTwoOneLabel>1</GroupOneFourTwoOneLabel>
+          <GroupOneFourTwoOneMinusSquare />
+        </GroupSixThreeFour>
       </>
     );
   }
