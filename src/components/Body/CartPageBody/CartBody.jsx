@@ -760,6 +760,18 @@ const GroupSixThreeFour = styled.div`
   left: 1071px;
   top: 265px;
 `;
+
+const ProductD1CartLayout = styled.img.attrs({
+  src: `${ProductDCart}`,
+})`
+  /* Product D */
+
+  position: absolute;
+  left: 79.17%;
+  right: 6.94%;
+  top: 20.07%;
+  bottom: 59.28%;
+`;
 export default class CartBody extends Component {
   render() {
     return (
@@ -857,6 +869,7 @@ export default class CartBody extends Component {
           <SliderLeftButton />
           <SliderRightButton />
         </FrameTwoFive>
+        <ProductD1CartLayout />
       </>
     );
   }
