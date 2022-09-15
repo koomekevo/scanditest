@@ -758,7 +758,7 @@ const GroupSixThreeFour = styled.div`
   width: 45px;
   height: 288px;
   left: 1071px;
-  top: 280px;
+  top: 265px;
 `;
 
 export default class CartBody extends Component {
