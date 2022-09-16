@@ -797,6 +797,35 @@ const OrderButton = styled.button`
   order: 1;
   flex-grow: 0;
 `;
+
+const OrderButtonLabel = styled.label`
+  /* Label */
+
+  width: 48px;
+  height: 17px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* --c-white */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
 export default class CartBody extends Component {
   render() {
     return (
@@ -812,7 +841,9 @@ export default class CartBody extends Component {
               <TotalAmount>$200:00</TotalAmount>
             </FrameThreeZero>
           </FrameThreeOne>
-          <OrderButton />
+          <OrderButton>
+            <OrderButtonLabel>ORDER</OrderButtonLabel>
+          </OrderButton>
         </FrameThreeTwo>
         <FrameTwoSix>
           <SliderLeftButton />
