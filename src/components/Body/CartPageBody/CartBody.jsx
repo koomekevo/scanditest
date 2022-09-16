@@ -772,6 +772,31 @@ const ProductD1CartLayout = styled.img.attrs({
   top: 20.07%;
   bottom: 59.28%;
 `;
+
+const OrderButton = styled.button`
+  /* _Button / Elements / Common */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+
+  width: 279px;
+  height: 43px;
+
+  /* --c-primary */
+
+  background: #5ece7b;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
 export default class CartBody extends Component {
   render() {
     return (
@@ -787,6 +812,7 @@ export default class CartBody extends Component {
               <TotalAmount>$200:00</TotalAmount>
             </FrameThreeZero>
           </FrameThreeOne>
+          <OrderButton />
         </FrameThreeTwo>
         <FrameTwoSix>
           <SliderLeftButton />
