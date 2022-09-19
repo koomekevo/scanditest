@@ -420,7 +420,7 @@ export default class Navigation extends Component {
             </ButtonWomenLabelLayout>
             <ButtonWomenPaddingRight />
           </ButtonWomen>
-          <ButtonMen>
+          <ButtonMen as="a" href="#" style={{ textDecoration: 'none' }}>
             <ButtonMenPaddingLeft />
             <ButtonMenLabelLayout>
               <ButtonMenLabel>TECH</ButtonMenLabel>
