@@ -737,7 +737,7 @@ const CartLabel = styled.h1`
   width: 84px;
   height: 40px;
   left: 100px;
-  top: 130px;
+  top: 120px;
 
   font-family: "Raleway";
   font-style: normal;
