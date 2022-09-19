@@ -428,7 +428,7 @@ export default class Navigation extends Component {
             </ButtonMenLabelLayout>
             <ButtonMenPaddingRight />
           </ButtonMen>
-          <ButtonKids>
+          <ButtonKids as="a" href="#" style={{ textDecoration: 'none' }}>
             <ButtonKidsPaddingLeft />
             <ButtonKidsLabelLayout>
               <ButtonKidsLabel>CLOTHES</ButtonKidsLabel>
