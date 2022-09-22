@@ -194,7 +194,9 @@ export default class ProductCardTile extends Component {
               <Link to="../../../pages/PDP">
                 <ProductCardTileImageFrameLayout src={this.props.item.img} />
               </Link>
-              <ProductCardTileCircleIconLayout />
+              <Link to="../../../pages/Cart">
+                <ProductCardTileCircleIconLayout />
+              </Link>
             </ProductCardTileImageLayout>
             <ProductCardTileImageSpacerBase />
             <ProductCardTileContent>
