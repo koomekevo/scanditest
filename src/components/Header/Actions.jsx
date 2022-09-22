@@ -1,3 +1,6 @@
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable no-undef */
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -51,6 +54,19 @@ const IconEmptyCart = styled(Link)`
   flex-grow: 0;
 `;
 export default class Actions extends Component {
+  constructor(props) {
+    super(props);
+    state = {
+      seen: false,
+    };
+
+    togglePop = () => {
+      this.setState({
+        seen: !this.state.seen,
+      });
+    };
+  }
+
   render() {
     return (
       <ActionsLayout>
