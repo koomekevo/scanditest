@@ -2,7 +2,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import emptycart from '../../assets/images/header/EmptyCart.svg';
 import CurrencySwitcher from './CurrencySwitcher';
 
@@ -40,7 +39,7 @@ const LayoutSpacerXLOne = styled.div`
   flex-grow: 0;
 `;
 
-const IconEmptyCart = styled(Link)`
+const IconEmptyCart = styled.div`
   /* Icon / Empty Cart */
 
   width: 20px;
