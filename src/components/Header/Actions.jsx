@@ -59,7 +59,6 @@ export default class Actions extends Component {
     };
   }
 
-  // eslint-disable-next-line no-undef, react/no-unused-class-component-methods
   togglePop = () => {
     this.setState({
       seen: !this.state.seen,
